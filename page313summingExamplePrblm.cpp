@@ -10,7 +10,7 @@ int main()
 
 #include <iostream>
     using namespace std;
-
+    // always remember that you put the amount of rows and columns you see ([4][4]) but also rember that you cant cout<<anything in the [4][4] area because it goes up to 3, 0 to 3
     int matrix[4][4] =
         {{1, 2, 3, 4},
          {4, 5, 6, 7},
