@@ -1,1 +1,1 @@
-    Circle(){};
+ss.str()

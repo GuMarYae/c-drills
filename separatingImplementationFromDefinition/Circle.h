@@ -1,4 +1,7 @@
+#ifndef Circle_H//if not defined
+#define Circle_H//then define
 #include <iostream>
+
 using namespace std;
 
 class Circle
@@ -18,3 +21,4 @@ public:
     double getRadius();
     // so basically, this page is for creating the class Circle and all its definitions
 };
+#endif//end the if statement

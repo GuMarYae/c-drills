@@ -1,5 +1,8 @@
 #include <iostream>
 #include "circle.cpp"
+#include "Circle.h"//notice how I included this in the circle.cpp and here also
+                   //its because of the ifndef,define, and endif directives which prevents c++
+                   //from reading circle more than just once. this is good practice 
 
 #include <iomanip>
 #include <cstdlib>
