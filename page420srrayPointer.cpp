@@ -6,6 +6,11 @@
 #include <string.h>
 #include <sstream>
 
+/*
+FROM PROFESSOR TANNER-REFERENCING IS TO GET THE ADDRESS
+DE-REFERNCING IS KNOWING THE ADDRESS AND INSTEAD, GET THE VALUE
+*/
+
 int main()
 {
 
@@ -21,8 +26,8 @@ int main()
                                    // referencing is getting the address of, dereferencing means not getting the address and going back to getting the
                                    // value instead.
                                    // in other words,*pGu == gu
-    std::cout << ((*pGu) == gu);//this returns 1 because its true. *pGu gets the value from the address of pGu which 
-                                //is gu, which is 35;
+    std::cout << ((*pGu) == gu);   // this returns 1 because its true. *pGu gets the value from the address of pGu which
+                                   // is gu, which is 35;
 
     return 0;
 }
