@@ -1,3 +1,6 @@
+#include "Rational.h"
+#include "rational.cpp"
+
 #include <iostream>
 #include <iomanip>
 #include <fstream>
@@ -7,8 +10,6 @@
 #include <vector>
 #include <cstdlib>
 
-#include "Rational.h"
-
 int main()
 {
     // create two rational objects with a numerator and a denominator
@@ -16,15 +17,15 @@ int main()
     Rational r2(2, 3);
     // test toString, add, sub, mult and divide
     // remember if its trying to get to a member function ("using the .") you have to have the parens.d toString()
-    //to string and add
-    std::cout << r1.toString() << " + " << r2.toString() << " = " << r1.add(r2).toString();
-    //toString and sub
-    std::cout<<r1.toString()<<" - "<<r2.toString()<<" = "<<r1.subtract(r2).toString();
-    //toString and mult
-    std::cout<<r1.toString()<< " * "<<r2.toString()<<" = "<<r1.multiply(r2).toString();
-    //toString and div
-    std::cout<<r1.toString()<< " / "<<r2.toString()<<" = "<<r1.divide(r2).toString();
-    
+    // to string and add
+    std::cout << r1.toString() << " + " << r2.toString() << " = " << r1.add(r2).toString()<<"\n";
+
+    // toString and sub
+    std::cout << r1.toString() << " - " << r2.toString() << " = " << r1.subtract(r2).toString()<<"\n";
+    // toString and mult
+    std::cout << r1.toString() << " * " << r2.toString() << " = " << r1.multiply(r2).toString()<<"\n";
+    // toString and div
+    std::cout << r1.toString() << " / " << r2.toString() << " = " << r1.divide(r2).toString()<<"\n";
 
     return 0;
 }
