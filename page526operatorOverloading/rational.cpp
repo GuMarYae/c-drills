@@ -30,10 +30,10 @@ Rational::Rational(int a_numerator, int a_denominator)
 // data type that we made; Rational..  so Rational ______  add(const ..
 // it looks weird but the second rational is the one being scoped. the one before it is the constructor for the implentation
 // it was the definition on the Rational.h file
-int Rational::gcd(int n, int d) 
+int Rational::gcd(int numerator, int denominator) 
 {
-  int n1 = abs(n);
-  int n2 = abs(d);
+  int n1 = abs(numerator);
+  int n2 = abs(denominator);
   int gcd = 1;
  
   for (int k = 1; k <= n1 && k <= n2; k++)
@@ -44,6 +44,8 @@ int Rational::gcd(int n, int d)
  
   return gcd;
   }
+  
+  //n = numerator and d = denominator
 
 Rational Rational::add(const Rational &secondRational) const
 {
