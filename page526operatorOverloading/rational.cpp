@@ -26,7 +26,7 @@ Rational::Rational(int a_numerator, int a_denominator)
 // note.. const Rational &secondRational is one parameter.  Remember pointers!!!!
 // const Rational &secondRational is like saying |const int number| = 1
 // you see how it says Rational add(const ??  remember Rational is a data type that we created, like int.
-// so since the scope goes after every datatype, ex int Rarionall::, then that means we have to put it after the
+// so since the scope goes after every datatype, ex int Rationall::, then that means we have to put it after the
 // data type that we made; Rational..  so Rational ______  add(const ..
 // it looks weird but the second rational is the one being scoped. the one before it is the constructor for the implentation
 // it was the definition on the Rational.h file
