@@ -29,14 +29,23 @@ int main()
     // or child_c1(3) this is the actual right way
     child_c1.setColor("black");
     child_c1.setFilled(false);
+
+    //easy invoke from parent 
     std::cout << child_c1.getColor() << std::endl;
     std::cout << child_c1.isFilled() << std::endl;
+
+     //easy invoke from itself
+     //note, the both need their own separate  toString fnctions because
+     //they have different names; GeometricObject and Circle Object
     std::cout << child_c1.toString() << std::endl;
     std::cout << child_c1.getRadius() << std::endl;
     std::cout << child_c1.getDiameter() << std::endl;
     std::cout << child_c1.getPerimeter() << std::endl;
 
     // we can make the rectangle object but its like making a circle lass twice.. as long as we can see how one child is compiled, we should be good
+
+    //so at the end, when you make a parent class , you do the norm. To make a child or sub class after you make you normal functions for that class
+    //you dont need to put anything from the parent class into the child class. you use the functions etc from the parent inside the shild class in this driverMain.cpp file
 
     return 0;
 }

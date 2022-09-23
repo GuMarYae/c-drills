@@ -45,5 +45,5 @@ void GeometricObject::setFilled(bool thatFilled)
 }
 std::string GeometricObject::toString() const
 {
-    return "GeometricObject";
+    return "GeometricObject im da 🔌 without me, yall aint sh*t";
 }
