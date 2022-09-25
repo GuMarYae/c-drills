@@ -22,7 +22,8 @@ int main()
                        // throw num1 so that line 33 can catch it
                        // in order for the catch to catch num1, catch has to be the same type (float) as num1. trust me, i tried other types for line 33
                        // if num1 is thrown, this block automatically terminates (breaks. so you dont even need a return type neither) and goes
-                       // straight to the catch block of code
+                       // straight to the catch block of code. 
+                       //                     the value for float num1 now becomes the value for float exception
                        // if num2 is not 0, it wont throw num1 and will std::cout << num1 << " / " << num2 << " = " << num1 / num2 << "\n";
             throw num1;
         } // else
