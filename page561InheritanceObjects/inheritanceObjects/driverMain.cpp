@@ -12,6 +12,14 @@
 #include "GeometricObject.h"
 #include "geometricObject.cpp"
 
+// generic programming
+// that GeometricObject in the parameter is declaring a class/ variabke type
+
+void displayGeometricObject(GeometricObject& shape)
+{
+    std::cout << shape.getColor();
+}
+
 int main()
 {
     // first, make the main attrubutes for a geometric shape
@@ -30,13 +38,13 @@ int main()
     child_c1.setColor("black");
     child_c1.setFilled(false);
 
-    //easy invoke from parent 
+    // easy invoke from parent
     std::cout << child_c1.getColor() << std::endl;
     std::cout << child_c1.isFilled() << std::endl;
 
-     //easy invoke from itself
-     //note, the both need their own separate  toString fnctions because
-     //they have different names; GeometricObject and Circle Object
+    // easy invoke from itself
+    // note, the both need their own separate  toString fnctions because
+    // they have different names; GeometricObject and Circle Object
     std::cout << child_c1.toString() << std::endl;
     std::cout << child_c1.getRadius() << std::endl;
     std::cout << child_c1.getDiameter() << std::endl;
@@ -44,8 +52,10 @@ int main()
 
     // we can make the rectangle object but its like making a circle lass twice.. as long as we can see how one child is compiled, we should be good
 
-    //so at the end, when you make a parent class , you do the norm. To make a child or sub class after you make you normal functions for that class
-    //you dont need to put anything from the parent class into the child class. you use the functions etc from the parent inside the shild class in this driverMain.cpp file
+    // so at the end, when you make a parent class , you do the norm. To make a child or sub class after you make you normal functions for that class
+    // you dont need to put anything from the parent class into the child class. you use the functions etc from the parent inside the shild class in this driverMain.cpp file
 
+    displayGeometricObject(GeometricObject("black", true));
+    displayGeometricObject(Circle(5));
     return 0;
 }

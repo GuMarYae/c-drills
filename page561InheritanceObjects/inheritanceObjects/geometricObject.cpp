@@ -8,6 +8,7 @@
 #include <vector>
 
 #include "GeometricObject.h"
+//constructors
 
 GeometricObject::GeometricObject(){};
 GeometricObject::GeometricObject(std::string &color, bool isFilled)

@@ -29,9 +29,12 @@ public:
     double doubleValue() const;
     std::string toString() const;
 
+    // operator overloading functions
+    bool operator<(const Rational &) const;
+    int operator[](int) const;
+
     // functions [getters]
     int getNumerator() const;
     int getDenominator() const;
-    
 };
 #endif
