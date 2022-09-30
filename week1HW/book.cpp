@@ -44,12 +44,12 @@ void Book::setPrice(double price)
     price_ = price;
 }
 //==================================
-// If I give he user something, I dont want them to change the information that they recieve (const)
+// If I give the user something, I dont want them to change the information that they recieve (const)
 std::string Book::print()
 {
     std::stringstream ss;
 
-    ss << name_ << " by " << author_.getName() << " (" << author_.getGender() << ")"
+    ss << name_ << " by " << author_.getName() << "(" << author_.getGender() << ")"
        << " at " << author_.getEmail();
 
     std::string s = ss.str();
