@@ -34,6 +34,7 @@ public:
     void setPrice(double);
 
     std::string print();
+    
 };
 
 #endif

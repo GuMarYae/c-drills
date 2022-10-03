@@ -5,6 +5,7 @@
 #include "Author.h"
 #include "Book.h"
 
+//instead of run
 // (a) g++ -o test driverMain.cpp author.cpp book.cpp
 // (a) ./test
 
