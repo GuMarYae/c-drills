@@ -33,7 +33,7 @@ ex...
     supertype = basetype = parent  referrint to a inherited type object in the parameter ..  it use to be something like void objectFunc (const int shape) but thats not a subtype or supertype thats a normal variabe type
 */
 
-void displayGeometricObject(GeometricObject &shape)
+void displayGeometricObject(GeometricObject shape)
 {
     std::cout << shape.toString();
 }
@@ -79,6 +79,11 @@ int main()
            important      shape refers to an object of the Circle type (line 44), the toString function defined in class Circle
            important      is invoked. The capability of determining which function to invoke at runtime is known as
            important      dynamic binding.
+
+                          To enable dynamic binding for a function, you need to do two things:
+                        ■ The function must be defined virtual in the base class.
+                        ■ The variable that references the object must be passed by reference or passed as a
+                          pointer in the virtual function.
     */
 
     return 0;

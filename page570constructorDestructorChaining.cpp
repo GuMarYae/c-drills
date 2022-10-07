@@ -48,7 +48,7 @@ Performs tasks for "hi" Person's destructor
 class Person
 {
 public:
-    Person()
+     Person()
     // constructor
     {
         std::cout << "Performs tasks for Person's constructor\n";
